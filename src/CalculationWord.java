@@ -15,10 +15,9 @@ import java.io.*;
 public class CalculationWord {
     public static void main( String[] args )
             throws FileNotFoundException, IOException {
-
-        List<String> list = new ArrayList<String>();
         boolean pos;
         int pril=0;
+        List<String> list = new ArrayList<String>();
         Scanner in = new Scanner(new File("C:\\Users\\IKZN\\IdeaProjects\\pp_lab3\\src\\text.txt"));
         while (in.hasNextLine())
             list.add(in.nextLine());
@@ -28,11 +27,10 @@ public class CalculationWord {
 
         String parts[] = array[0].split(" ");
 
-        for(int i=0;i!=parts.length;i++){
-            if((pos = parts[i].matches("(.*)(ый|ой|ее|ий|ай|его|ему|ей|ого|им|ому)"))!=false) {
+        for(int i=0;i!=parts.length;i++) {
+            if ((pos = parts[i].matches("(.*)(ый|ой|ее|ий|ай|его|ему|ого|им|ому)")) != false) {
                 pril++;
             }
-
         }
         System.out.println(pril);
        /* try(FileReader reader = new FileReader("C:\\Users\\IKZN\\IdeaProjects\\pp_lab3\\src\\text.txt"))
