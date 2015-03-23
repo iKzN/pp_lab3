@@ -6,7 +6,7 @@ public static void main(String[] args){
  System.out.println(checkWithRegExp("_@BEST"));
  System.out.println(checkWithRegExp("vovan"));
  System.out.println(checkWithRegExp("vo"));
- System.out.println(checkWithRegExp("Z@OZA"));
+ System.out.println(checkWithRegExp("Z@OZdfgsdgA"));
   }
  public  static boolean checkWithRegExp(String userNameString){
      Pattern p=Pattern.compile("^[a-z0-9_-]{3,15}$");
