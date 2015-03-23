@@ -16,7 +16,7 @@ public class CalculationWord {
     public static void main( String[] args )
             throws FileNotFoundException, IOException {
         boolean pos;
-        int pril=0;
+        int pril=0,gl=0;
         List<String> list = new ArrayList<String>();
         Scanner in = new Scanner(new File("C:\\Users\\IKZN\\IdeaProjects\\pp_lab3\\src\\text.txt"));
         while (in.hasNextLine())
@@ -28,11 +28,17 @@ public class CalculationWord {
         String parts[] = array[0].split(" ");
 
         for(int i=0;i!=parts.length;i++) {
-            if ((pos = parts[i].matches("(.*)(ый|ой|ее|ий|ай|его|ему|ого|им|ому)")) != false) {
+            if ((pos = parts[i].matches("(.*)(ый|ой|ее|ий|его|ему|ого|им|ому)")) != false) {
                 pril++;
             }
         }
+        for(int i=0;i!=parts.length;i++) {
+            if ((pos = parts[i].matches("(.*)(ал|ла|ай|ть|аю|ши|рь|ет)")) != false) {
+                gl++;
+            }
+        }
         System.out.println(pril);
+        System.out.println(gl);
        /* try(FileReader reader = new FileReader("C:\\Users\\IKZN\\IdeaProjects\\pp_lab3\\src\\text.txt"))
         {
             // читаем посимвольно
