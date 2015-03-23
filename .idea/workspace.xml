@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddf1df5d-d924-46c6-af9d-cf416b560fd2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CalculationWord.java" afterPath="$PROJECT_DIR$/src/CalculationWord.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pp_lab3.iws" />
@@ -42,8 +43,8 @@
       <file leaf-file-name="CalculationWord.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CalculationWord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6567944" vertical-offset="99" max-vertical-offset="1020">
-              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.4216028" vertical-offset="268" max-vertical-offset="1156">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="33" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#516#524#0" expanded="true" />
@@ -403,7 +404,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427131869300</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Создан файл CalculationWord, который должен будет осуществлять подсчет, в него добавлено чтение файла">
+      <created>1427131924055</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1427131924055</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -437,7 +444,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -475,7 +482,8 @@
     <MESSAGE value="реализована проверка имени пользователя" />
     <MESSAGE value="внесены изменения в пароли" />
     <MESSAGE value="Создан файл CalculationWord, который должен будет осуществлять подсчет, в него добавлено посимвольное чтение файла" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создан файл CalculationWord, который должен будет осуществлять подсчет, в него добавлено посимвольное чтение файла" />
+    <MESSAGE value="Создан файл CalculationWord, который должен будет осуществлять подсчет, в него добавлено чтение файла" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создан файл CalculationWord, который должен будет осуществлять подсчет, в него добавлено чтение файла" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -498,8 +506,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CalculationWord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6567944" vertical-offset="99" max-vertical-offset="1020">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.4216028" vertical-offset="268" max-vertical-offset="1156">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="33" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#516#524#0" expanded="true" />
