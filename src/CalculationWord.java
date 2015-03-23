@@ -16,7 +16,7 @@ public class CalculationWord {
     public static void main( String[] args )
             throws FileNotFoundException, IOException {
         boolean pos;
-        int pril=0,gl=0;
+        int pril=0,gl=0,nar=0;
         List<String> list = new ArrayList<String>();
         Scanner in = new Scanner(new File("C:\\Users\\IKZN\\IdeaProjects\\pp_lab3\\src\\text.txt"));
         while (in.hasNextLine())
@@ -37,8 +37,14 @@ public class CalculationWord {
                 gl++;
             }
         }
+        for(int i=0;i!=parts.length;i++) {
+            if ((pos = parts[i].matches("(.*)(но|ше|ом|ём|ро|нно|ро)")) != false) {
+                nar++;
+            }
+        }
         System.out.println(pril);
         System.out.println(gl);
+        System.out.println(nar);
        /* try(FileReader reader = new FileReader("C:\\Users\\IKZN\\IdeaProjects\\pp_lab3\\src\\text.txt"))
         {
             // читаем посимвольно
