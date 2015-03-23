@@ -16,13 +16,18 @@ public class CalculationWord {
     public static void main( String[] args )
             throws FileNotFoundException, IOException {
 
-       /* List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<String>();
         Scanner in = new Scanner(new File("C:\\Users\\IKZN\\IdeaProjects\\pp_lab3\\src\\text.txt"));
         while (in.hasNextLine())
             list.add(in.nextLine());
-        String[] array = list.toArray(new String[0]);*/
+        String[] array = list.toArray(new String[0]);
 
-        try(FileReader reader = new FileReader("C:\\Users\\IKZN\\IdeaProjects\\pp_lab3\\src\\text.txt"))
+        System.out.println(array[0]);
+
+        String parts[] = array[0].split(" ");
+
+       
+       /* try(FileReader reader = new FileReader("C:\\Users\\IKZN\\IdeaProjects\\pp_lab3\\src\\text.txt"))
         {
             // читаем посимвольно
             int[] c=new int[500];
@@ -32,11 +37,18 @@ public class CalculationWord {
                 System.out.print((char)c[i]);
                 i++;
             }
-            System.out.print((char)c[i-1]);
+            System.out.print((char)c[i-5]);
+
+
+            for(int j=0;j<=i;j++){
+                if(((char)c[i]==' ')&&((char)c[i]==' ')){
+
+                }
+            }
         }
         catch(IOException ex){
 
             System.out.println(ex.getMessage());
-        }
+        }*/
     }
 }
