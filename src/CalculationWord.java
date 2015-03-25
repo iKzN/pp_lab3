@@ -29,22 +29,33 @@ public class CalculationWord {
 
         String[] array = list.toArray(new String[0]);       //создаем массив стринговских переменных
 
-        System.out.println(array[0]);                       //выводим текст
 
-        String parts[] = array[0].split(" ");               //разбиваем его на слова
 
-        for(int i=0;i!=parts.length;i++) {                  //ищем прилогательные по окончаниям
-            if ((pos = parts[i].matches("(.*)(ый|ой|ее|ий|его|ему|ого|им|ому)")) != false) {
+        String alltext=array[0];
+
+        for(int i=1;i!=array.length;i++) {
+            alltext=alltext+" "+array[i];
+        }
+
+        System.out.println(alltext);                       //выводим текст
+
+        String parts[] = alltext.split(" ");               //разбиваем его на слова
+
+        for(int i=0;i!=parts.length;i++) {                  //ищем прилагательные по окончаниям
+            if ((pos = parts[i].matches("(.*)(ый|ой|ее|ий|его|ему|ого|им|ому|ых|ые|яя|ая)[,.!?;:()]{0,1}")) != false) {
                 pril++;
+                System.out.println(i);
+                System.out.println(parts[i]);
             }
         }
         for(int i=0;i!=parts.length;i++) {                  //ищем глаголы
             if ((pos = parts[i].matches("(.*)(ал|ла|ай|ть|аю|ши|рь|ет|шь)")) != false) {
                 gl++;
+
             }
         }
         for(int i=0;i!=parts.length;i++) {                  //ищем наречия
-            if ((pos = parts[i].matches("(.*)(но|ше|ом|ём|ро|нно|ро)")) != false) {
+            if ((pos = parts[i].matches("(.*)(но|ше|ом|ём|ро|нно|ро|ва).*")) != false) {
                 nar++;
             }
         }
@@ -58,28 +69,7 @@ public class CalculationWord {
         System.out.println(gl);
         System.out.println("    Количество наречий:");
         System.out.println(nar);
-       /* try(FileReader reader = new FileReader("C:\\Users\\IKZN\\IdeaProjects\\pp_lab3\\src\\text.txt"))
-        {
-            // читаем посимвольно
-            int[] c=new int[500];
-            int i=0;
-            while((c[i]=reader.read())!=-1){
-
-                System.out.print((char)c[i]);
-                i++;
-            }
-            System.out.print((char)c[i-5]);
 
 
-            for(int j=0;j<=i;j++){
-                if(((char)c[i]==' ')&&((char)c[i]==' ')){
-
-                }
-            }
-        }
-        catch(IOException ex){
-
-            System.out.println(ex.getMessage());
-        }*/
     }
 }
